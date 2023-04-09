@@ -90,4 +90,20 @@ h1 {
 p {
   font-size: 25px;
 }
+
+@media (max-width: 670px) {
+  .content {
+    display: flex;
+  }
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
 </style>
