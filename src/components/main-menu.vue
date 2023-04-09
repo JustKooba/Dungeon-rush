@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: diamond-dust;
+  src: url("../assets/font/DiamondDust-m3a9.ttf");
+}
+
 .content {
   overflow: hidden;
   display: flex;
@@ -73,9 +78,16 @@ export default {
 h1,
 p {
   text-align: center;
+  font-family: "diamond-dust";
 }
 
 h1 {
+  margin-top: -10px;
   margin-bottom: -20px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
 }
 </style>
