@@ -36,10 +36,14 @@
     :style="{ display: characterDisplay }"
     v-on:characterClickBack="characterClick"
   />
+  <shop-main :style="{ display: shopDisplay }" v-on:shopClickBack="shopClick" />
+  <map-main :style="{ display: mapDisplay }" v-on:mapClickBack="mapClick" />
 </template>
 
 <script>
+import shopMain from "./shop-main.vue";
 import characterMain from "./character-main.vue";
+import mapMain from "./map-main.vue";
 export default {
   name: "mainMenu",
 
@@ -47,19 +51,37 @@ export default {
     return {
       characterDisplay: "none",
       mainMenuDisplay: "block",
+      shopDisplay: "none",
+      mapDisplay: "none",
     };
   },
 
   components: {
     characterMain,
+    shopMain,
+    mapMain,
   },
 
   methods: {
     mapClick() {
       console.log("map clicked");
+      if (this.mapDisplay === "none" || this.mainMenuDisplay === "block") {
+        this.mapDisplay = "block";
+        this.mainMenuDisplay = "none";
+      } else {
+        this.mapDisplay = "none";
+        this.mainMenuDisplay = "block";
+      }
     },
     shopClick() {
       console.log("shop clicked");
+      if (this.shopDisplay === "none" || this.mainMenuDisplay === "block") {
+        this.shopDisplay = "block";
+        this.mainMenuDisplay = "none";
+      } else {
+        this.shopDisplay = "none";
+        this.mainMenuDisplay = "block";
+      }
     },
     characterClick() {
       console.log("character clicked");

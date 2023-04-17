@@ -2,7 +2,7 @@
   <div>
     <h1>Character</h1>
     <p>Character page</p>
-    <button></button>
+    <button @click="characterClick">Back</button>
   </div>
 </template>
 
