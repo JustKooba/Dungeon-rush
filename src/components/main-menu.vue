@@ -1,32 +1,80 @@
 <template>
-  <h1>Dungeon Rush</h1>
-  <p>Welcome traveler.</p>
-  <div class="content">
-    <div class="top">
-      <div class="map-wrapper">
-        <button class="map">
-          <img src="../assets/map_cleanup.png" alt="map icon" />
-        </button>
+  <div :style="{ display: mainMenuDisplay }">
+    <h1>Dungeon Rush</h1>
+    <p>Welcome traveler.</p>
+    <div class="content">
+      <div class="top">
+        <div class="map-wrapper">
+          <button class="map">
+            <img
+              src="../assets/map_cleanup.png"
+              alt="map icon"
+              @click="mapClick"
+            />
+          </button>
+        </div>
+        <div class="shop-wrapper">
+          <button class="shop">
+            <img src="../assets/shop.png" alt="shop icon" @click="shopClick" />
+          </button>
+        </div>
       </div>
-      <div class="shop-wrapper">
-        <button class="shop">
-          <img src="../assets/shop.png" alt="shop icon" />
-        </button>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="character-wrapper">
-        <button class="character">
-          <img src="../assets/knight.png" alt="character icon" />
-        </button>
+      <div class="bottom">
+        <div class="character-wrapper">
+          <button class="character">
+            <img
+              src="../assets/knight.png"
+              alt="character icon"
+              @click="characterClick"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>
+  <character-main
+    :style="{ display: characterDisplay }"
+    v-on:characterClickBack="characterClick"
+  />
 </template>
 
 <script>
+import characterMain from "./character-main.vue";
 export default {
   name: "mainMenu",
+
+  data() {
+    return {
+      characterDisplay: "none",
+      mainMenuDisplay: "block",
+    };
+  },
+
+  components: {
+    characterMain,
+  },
+
+  methods: {
+    mapClick() {
+      console.log("map clicked");
+    },
+    shopClick() {
+      console.log("shop clicked");
+    },
+    characterClick() {
+      console.log("character clicked");
+      if (
+        this.characterDisplay === "none" ||
+        this.mainMenuDisplay === "block"
+      ) {
+        this.characterDisplay = "block";
+        this.mainMenuDisplay = "none";
+      } else {
+        this.characterDisplay = "none";
+        this.mainMenuDisplay = "block";
+      }
+    },
+  },
 };
 </script>
 
