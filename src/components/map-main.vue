@@ -3,15 +3,28 @@
     <h1>Choose your destination, traveler</h1>
 
     <div class="dungeons">
-      <div class="Mine"></div>
+      <div class="top">
+        <div class="Mine">
+          <h2>Mine</h2>
+        </div>
 
-      <div class="Shadow-Crypts"></div>
+        <div class="Shadow-Crypts">
+          <h2>Shadow Crypts</h2>
+        </div>
 
-      <div class="Infernal-Stronghold"></div>
+        <div class="Infernal-Stronghold">
+          <h2>Infernal Stronghold</h2>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="Cursed-Keep">
+          <h2>Cursed Keep</h2>
+        </div>
 
-      <div class="Cursed-Keep"></div>
-
-      <div class="Abyssal-Labyrinth"></div>
+        <div class="Abyssal-Labyrinth">
+          <h2>Abyssal Labyrinth</h2>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,17 +62,56 @@ h1 {
   flex-wrap: wrap;
 }
 
-.Mine {
-  background: url("../assets/mine.jpg");
+.top {
+  display: flex;
+}
+
+.bottom {
+  margin-top: 10px;
+  display: flex;
+}
+
+.Shadow-Crypts,
+.Mine,
+.Infernal-Stronghold,
+.Cursed-Keep,
+.Abyssal-Labyrinth {
   height: 400px;
   width: 300px;
   background-repeat: no-repeat;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .Shadow-Crypts {
   background: url("../assets/crypts.png");
-  height: 400px;
-  width: 300px;
-  background-repeat: no-repeat;
+}
+
+.Mine {
+  background: url("../assets/mine.png");
+}
+
+.Infernal-Stronghold {
+  background: url("../assets/infernal.png");
+}
+
+.Cursed-Keep {
+  background: url("../assets/c-keep.png");
+}
+
+.Abyssal-Labyrinth {
+  background: url("../assets/abyss.png");
+}
+
+.dungeons div div:hover {
+  cursor: pointer;
+  transform: rotate(1deg);
+  transition: ease-in-out 0.3s;
 }
 </style>
