@@ -5,24 +5,39 @@
     <div class="dungeons">
       <div class="top">
         <div class="Mine">
-          <h2>Mine</h2>
+          <div class="desc">
+            <h2>Mine</h2>
+            <p>Recommended level: <span class="num"> 0</span></p>
+          </div>
         </div>
 
         <div class="Shadow-Crypts">
-          <h2>Shadow Crypts</h2>
+          <div class="desc">
+            <h2>Shadow Crypts</h2>
+            <p>Recommended level: <span class="num"> 10</span></p>
+          </div>
         </div>
 
         <div class="Infernal-Stronghold">
-          <h2>Infernal Stronghold</h2>
+          <div class="desc">
+            <h2>Infernal Stronghold</h2>
+            <p>Recommended level: <span class="num"> 20</span></p>
+          </div>
         </div>
       </div>
       <div class="bottom">
         <div class="Cursed-Keep">
-          <h2>Cursed Keep</h2>
+          <div class="desc">
+            <h2>Cursed Keep</h2>
+            <p>Recommended level: <span class="num"> 30</span></p>
+          </div>
         </div>
 
         <div class="Abyssal-Labyrinth">
-          <h2>Abyssal Labyrinth</h2>
+          <div class="desc">
+            <h2>Abyssal Labyrinth</h2>
+            <p>Recommended level: <span class="num"> 40</span></p>
+          </div>
         </div>
       </div>
     </div>
@@ -64,11 +79,15 @@ h1 {
 
 .top {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bottom {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Shadow-Crypts,
@@ -113,5 +132,19 @@ h1 {
   cursor: pointer;
   transform: rotate(1deg);
   transition: ease-in-out 0.3s;
+}
+
+.num {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  margin-top: -30px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 </style>
