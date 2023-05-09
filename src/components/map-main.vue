@@ -1,5 +1,8 @@
 <template>
   <div class="content">
+    <button @click="mapClick" class="back">
+      <img src="../assets/back.svg" />
+    </button>
     <h1>Choose your destination, traveler</h1>
 
     <div class="dungeons">
@@ -146,5 +149,13 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.back {
+  background: transparent;
+  position: absolute;
+  width: 50px;
+  border: none;
+  cursor: pointer;
 }
 </style>

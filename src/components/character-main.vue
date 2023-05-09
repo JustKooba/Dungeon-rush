@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Character</h1>
+    <h1>Customize yourself, traveler.</h1>
     <p>Character page</p>
     <button @click="characterClick">Back</button>
   </div>
