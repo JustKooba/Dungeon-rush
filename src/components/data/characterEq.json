@@ -1,0 +1,11 @@
+{
+  "eq": [
+    { "index": 0, "helmet": null },
+    { "index": 1, "chestplate": null },
+    { "index": 2, "Leggings": null },
+    { "index": 3, "boots": null },
+    { "index": 4, "necklace": null },
+    { "index": 5, "weapon": null },
+    { "index": 6, "holdable": null }
+  ]
+}
