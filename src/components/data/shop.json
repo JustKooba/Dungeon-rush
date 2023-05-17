@@ -1,0 +1,158 @@
+{
+  "level10": [
+    {
+      "index": 0,
+      "name": "Ironheart Plate",
+      "stats": { "def": 15 },
+      "cost": 200
+    },
+    {
+      "index": 1,
+      "name": "Shadow Leggings",
+      "stats": { "def": 12 },
+      "cost": 150
+    },
+    {
+      "index": 2,
+      "name": "Guardian Helm",
+      "stats": { "def": 10 },
+      "cost": 120
+    },
+    {
+      "index": 3,
+      "name": "Amulet of Protection",
+      "stats": { "def": 5 },
+      "cost": 80
+    },
+    { "index": 4, "name": "Miner's boots", "stats": { "def": 8 }, "cost": 100 },
+    {
+      "index": 5,
+      "name": "Blade of Valor",
+      "stats": { "atk": 20 },
+      "cost": 250
+    },
+    {
+      "index": 6,
+      "name": "Enchanted Relic",
+      "stats": { "atk": 15, "hp": 10 },
+      "cost": 300
+    }
+  ],
+  "level20": [
+    {
+      "index": 0,
+      "name": "Deep-steel chestplate",
+      "stats": { "def": 30 },
+      "cost": 400
+    },
+    {
+      "index": 1,
+      "name": "Crawler's leggings",
+      "stats": { "def": 24 },
+      "cost": 300
+    },
+    {
+      "index": 2,
+      "name": "Helmet of Riamre",
+      "stats": { "def": 20 },
+      "cost": 240
+    },
+    {
+      "index": 3,
+      "name": "Serpent scale necklace",
+      "stats": { "def": 10 },
+      "cost": 160
+    },
+    { "index": 4, "name": "Swift boots", "stats": { "def": 16 }, "cost": 200 },
+    {
+      "index": 5,
+      "name": "Blade of the unknown",
+      "stats": { "atk": 40 },
+      "cost": 500
+    },
+    {
+      "index": 6,
+      "name": "Deep stone",
+      "stats": { "def": 20, "atk": 5 },
+      "cost": 600
+    }
+  ],
+  "level30": [
+    {
+      "index": 0,
+      "name": "Adamantium Chestplate",
+      "stats": { "def": 45 },
+      "cost": 600
+    },
+    {
+      "index": 1,
+      "name": "Regile Leggings",
+      "stats": { "def": 36 },
+      "cost": 450
+    },
+    {
+      "index": 2,
+      "name": "Cryptic Helmet",
+      "stats": { "def": 30 },
+      "cost": 360
+    },
+    {
+      "index": 3,
+      "name": "Deep ocean necklace",
+      "stats": { "def": 15 },
+      "cost": 240
+    },
+    {
+      "index": 4,
+      "name": "Frost walkers",
+      "stats": { "def": 24 },
+      "cost": 300
+    },
+    {
+      "index": 5,
+      "name": "Blade of Nestium",
+      "stats": { "atk": 60 },
+      "cost": 750
+    },
+    {
+      "index": 6,
+      "name": "Leviathan's claw",
+      "stats": { "atk": 35, "dodging-chance": 7 },
+      "cost": 900
+    }
+  ],
+  "level40": [
+    {
+      "index": 0,
+      "name": "Abyssal Chestplate",
+      "stats": { "def": 60 },
+      "cost": 800
+    },
+    {
+      "index": 1,
+      "name": "Infernal Leggings",
+      "stats": { "def": 48 },
+      "cost": 600
+    },
+    {
+      "index": 2,
+      "name": "Glorious Helmet",
+      "stats": { "def": 40 },
+      "cost": 480
+    },
+    { "index": 3, "name": "Void piece", "stats": { "def": 20 }, "cost": 320 },
+    { "index": 4, "name": "Buty", "stats": { "def": 32 }, "cost": 400 },
+    {
+      "index": 5,
+      "name": "Destroyer of dungeons",
+      "stats": { "atk": 80 },
+      "cost": 1000
+    },
+    {
+      "index": 6,
+      "name": "Abyssal key",
+      "stats": { "atk": 40, "def": 10, "exp-drop": 20 },
+      "cost": 1200
+    }
+  ]
+}
