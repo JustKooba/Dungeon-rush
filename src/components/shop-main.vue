@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h1>Shop</h1>
+    <h1>You need something, traveler?</h1>
     <button @click="shopClick" class="back">
       <img src="../assets/back.svg" />
     </button>
@@ -35,6 +35,7 @@ export default {
   width: 50px;
   border: none;
   cursor: pointer;
+  top: 30px;
 }
 
 h1 {
